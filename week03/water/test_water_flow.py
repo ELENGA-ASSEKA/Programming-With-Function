@@ -2,6 +2,12 @@
 from pytest import approx
 import pytest
 
+from water_flow import( water_column_height,
+    pressure_gain_from_water_height,
+    pressure_loss_from_pipe,
+    pressure_loss_from_fittings,
+    reynolds_number,
+    pressure_loss_from_pipe_reduction)
 #Let call the first def for test_water_culomn_height
 def test_water_column_height():
     assert water_column_height(00, 00)==approx(00, abs=0.001)
